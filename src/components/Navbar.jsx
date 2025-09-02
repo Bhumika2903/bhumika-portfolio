@@ -25,7 +25,7 @@ export default function Navbar() {
         </a>
 
         {/* Centered Links */}
-        <div className="flex-1 flex justify-center gap-6">
+        <div className="flex-1 flex justify-center gap-8">
           {["about", "education", "projects", "contact"].map((section) => (
             <a
               key={section}
