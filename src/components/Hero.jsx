@@ -12,24 +12,24 @@ export default function Hero() {
         bg-gradient-to-br from-[#E18B6E] to-[#DE7F5F] shadow-lg
         before:absolute before:inset-0.5 before:rounded-full before:bg-gradient-to-r before:from-pink-200/50 before:to-purple-200/50 before:z-0
         after:absolute after:inset-1 after:rounded-full after:border-2 after:border-white/40 after:z-10">
-        <span className="relative text-black text-5xl font-extrabold font-serif tracking-wide z-20">BP</span>
+        <span className="relative text-black text-5xl font-bold font-serif tracking-wide z-20">BP</span>
       </div>
 
       {/* Name */}
-      <h1 className="mt-8 text-5xl md:text-6xl font-extrabold leading-tight text-black dark:text-white transition-colors duration-500">
+      <h1 className="mt-8 text-4xl md:text-6xl font-bold leading-tight text-black dark:text-white transition-colors duration-500">
         <span className="text-[#E18B6E]">Bhumika</span>{" "}
         <span className="text-gray-800 dark:text-gray-200">Pandey</span>
       </h1>
 
       {/* Tagline */}
-      <p className="text-gray-500 dark:text-gray-400 mt-3 text-xl italic transition-colors duration-500">
+      <p className="text-gray-500 dark:text-gray-400 mt-3 text-xl text-muted-foreground transition-colors duration-500">
         Build. Break. Improve. Repeat.
       </p>
 
       {/* Resume Button + Icons */}
       <div className="mt-8 flex items-center gap-4">
         <a
-          href="/resume.pdf"
+          href="/Bhumika_pandey.pdf"
           download
           className="inline-flex items-center gap-2 bg-gradient-to-r from-[#E4967C] to-[#DE7F5F] text-white font-semibold px-5 py-2.5 rounded-xl shadow-md hover:opacity-90 transition"
           title="Download Resume"

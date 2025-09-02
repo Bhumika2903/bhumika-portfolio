@@ -19,7 +19,7 @@ export default function Navbar() {
         {/* Logo / Init */}
         <a
           href="#home"
-          className="text-2xl font-bold tracking-wide text-black dark:text-white transition-colors duration-500"
+          className="text-2xl text-bold tracking-wide text-black dark:text-white transition-colors duration-500"
         >
           Init
         </a>
