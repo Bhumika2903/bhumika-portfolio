@@ -81,11 +81,13 @@ export default function About() {
               "Android Studio",
             ].map((tool) => (
               <span
-                key={tool}
-                className="text-xs px-3 py-1 rounded-full border border-neutral-300 dark:border-white/40 text-black dark:text-white transition-colors duration-300 hover:bg-[#FFF1E6]"
-              >
-                {tool}
-              </span>
+  key={tool}
+  className="text-xs px-3 py-1 rounded-full border border-neutral-300 dark:border-white/40 
+             text-black dark:text-white transition-colors duration-300 
+             hover:bg-[#FFF1E6] dark:hover:bg-gray-400/20"
+>
+  {tool}
+</span>
             ))}
           </div>
         </div>
