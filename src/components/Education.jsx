@@ -30,10 +30,10 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="scroll-mt-16 pt-32 px-4 pb-20 bg-white dark:bg-black transition-colors duration-500"
+      className="scroll-mt-16 pt-32 px-4 pb-20 bg-[#FFF5F2] dark:bg-black transition-colors duration-500"
     >
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-3xl font-extrabold mb-8 border-b-4 border-orange-400/80 inline-block ml-20 text-black dark:text-white">
+        <h2 className="text-3xl font-extrabold mb-8 border-b-4 border-orange-00/80 inline-block ml-20 text-black dark:text-white">
           Education
         </h2>
         <div className="space-y-6 gap-3 ml-20" style={{ maxWidth: "calc(100% - 9rem)" }}>

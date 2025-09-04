@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ['ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'serif'],
+        display: ['"Playfair Display"', 'serif'], // for headings, names
         body: ['ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Inter', 'Arial', 'sans-serif'],
       },
     },

@@ -14,7 +14,7 @@ export default function Navbar() {
   }, [darkMode]);
 
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 h-16 bg-white/100 dark:bg-black/70 backdrop-blur border-b border-black/10 dark:border-white/10">
+    <nav className="fixed top-0 inset-x-0 z-50 h-16 bg-[#FFF5F2] dark:bg-black/70 backdrop-blur border-b border-black/10 dark:border-white/10">
       <div className="mx-auto max-w-6xl px-4 h-full flex justify-between items-center">
         {/* Logo / Init */}
         <a
@@ -25,7 +25,7 @@ export default function Navbar() {
         </a>
 
         {/* Centered Links */}
-        <div className="flex-1 text-primary flex justify-center gap-16">
+        <div className=" text-primary flex-1 flex justify-center gap-12">
           {["about", "education", "projects", "contact"].map((section) => (
             <a
               key={section}
