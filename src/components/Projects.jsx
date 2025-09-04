@@ -41,31 +41,33 @@ const data = [
 ];
 
 const Card = ({ p }) => (
-  <div className="bg-white dark:bg-neutral-900/60 rounded-2xl border border-neutral-300 dark:border-white/10 overflow-hidden hover:scale-105 transition-transform duration-300 shadow-lg flex flex-col h-full">
+  <div className="bg-white dark:bg-neutral-900/60 rounded-2xl border border-neutral-300 dark:border-white/10 overflow-hidden hover:scale-105 transition-transform duration-300 shadow-md flex flex-col h-full">
     {p.img && (
-      <img src={p.img} alt={p.title} className="w-full h-48 md:h-52 object-cover" />
+      <img 
+        src={p.img} 
+        alt={p.title} 
+        className="w-full h-34 sm:h-40 md:h-48 object-cover" 
+      />
     )}
-    <div className="p-6 flex flex-col flex-1">
-      <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-black dark:text-white">{p.title}</h3>
-        {/* Date badge */}
-        <span className="text-xs px-3 py-1 rounded-full bg-[#FFF1E6] dark:bg-[#FFDACC] text-[#B85F40] border border-[#f5dcdc]">
+    <div className="p-3 sm:p-4 flex flex-col flex-1">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
+        <h3 className="text-lg sm:text-lg font-semibold text-black dark:text-white">{p.title}</h3>
+        <span className="text-xs px-2 py-1 rounded-full bg-[#FFF1E6] dark:bg-[#FFDACC] text-[#B85F40] border border-[#f5dcdc]">
           {p.date}
         </span>
       </div>
 
-      <p className="mt-3 text-gray-700 dark:text-gray-300 text-sm leading-relaxed flex-1">
+      <p className="mt-2 text-gray-700 dark:text-gray-300 text-xs sm:text-sm leading-snug flex-1">
         {p.desc.split('. ').map((sentence, i) => (
-          <span key={i} className="block mb-2">{sentence}.</span>
+          <span key={i} className="block mb-1">{sentence}.</span>
         ))}
       </p>
 
-      {/* Tech stack pills */}
-      <div className="mt-4 flex flex-wrap gap-2">
+      <div className="mt-2 flex flex-wrap gap-1 sm:gap-2">
         {p.tech.map(t => (
           <span 
             key={t} 
-            className="text-xs px-3 py-1 rounded-full border border-neutral-300 dark:border-white/20 
+            className="text-xs px-2 py-0.5 rounded-full border border-neutral-300 dark:border-white/20 
                       bg-[#FFF1E6] text-black 
                       dark:bg-[#1a1a1a] dark:text-white 
                       transition-colors duration-300"
@@ -75,19 +77,14 @@ const Card = ({ p }) => (
         ))}
       </div>
 
-      {/* GitHub button - pill shape */}
-      <div className="mt-6 flex justify-center">
+      <div className="mt-3 flex justify-center">
         <a
           href={p.github}
           target="_blank"
           rel="noreferrer"
-          className="flex items-center gap-2 px-3 py-1 rounded-full 
-                     border border-neutral-300 dark:border-white/20 
-                     bg-[#FFF1E6] text-black 
-                     dark:bg-black dark:text-white
-                     transition-colors duration-300 text-xs"
+          className="flex items-center gap-1 px-2 py-0.5 rounded-full border border-neutral-300 dark:border-white/20 bg-[#FFF1E6] text-black dark:bg-black dark:text-white transition-colors duration-300 text-xs"
         >
-          <FaGithub className="w-4 h-4" />
+          <FaGithub className="w-3 h-3" />
           <span>View on GitHub</span>
         </a>
       </div>
@@ -95,24 +92,23 @@ const Card = ({ p }) => (
   </div>
 );
 
+
 export default function Projects() {
   return (
     <section 
       id="projects"
-      className="scroll-mt-14 pt-32 pb-32 px-4 bg-[#FFF5F2] dark:bg-black transition-colors duration-500"
+      className="scroll-mt-14 pt-20 sm:pt-32 pb-32 px-4 sm:px-6 bg-[#FFF5F2] dark:bg-black transition-colors duration-500"
     >
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-3xl font-extrabold mb-8 border-b-4 border-orange-400/80 inline-block ml-20 text-black dark:text-white">
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-8 border-b-4 border-orange-400/80 inline-block text-black dark:text-white">
           Projects
         </h2>
 
-        <div className="ml-20 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[1133px]">
-          {data.map(p => (
-            <div key={p.title} className="w-full">
-              <Card p={p} />
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  {data.map(p => (
+    <Card key={p.title} p={p} />
+  ))}
+</div>
       </div>
     </section>
   );
