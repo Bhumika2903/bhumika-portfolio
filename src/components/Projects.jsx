@@ -43,12 +43,12 @@ const data = [
 const Card = ({ p }) => (
   <div className="bg-white dark:bg-neutral-900/60 rounded-2xl border border-neutral-300 dark:border-white/10 overflow-hidden hover:scale-105 transition-transform duration-300 shadow-md flex flex-col h-full">
     {p.img && (
-      <img 
-        src={p.img} 
-        alt={p.title} 
-        className="w-full h-34 sm:h-40 md:h-48 object-cover" 
-      />
-    )}
+  <img 
+    src={p.img} 
+    alt={p.title} 
+    className="w-full h-36 sm:h-40 md:h-48 object-cover" 
+  />
+)}
     <div className="p-3 sm:p-4 flex flex-col flex-1">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
         <h3 className="text-lg sm:text-lg font-semibold text-black dark:text-white">{p.title}</h3>
