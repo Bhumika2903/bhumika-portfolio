@@ -46,7 +46,7 @@ const Card = ({ p }) => (
   <img 
     src={p.img} 
     alt={p.title} 
-    className="w-full h-36 sm:h-40 md:h-48 object-cover" 
+    className="w-full h-36 sm:h-40 md:h-64 object-cover" 
   />
 )}
     <div className="p-3 sm:p-4 flex flex-col flex-1">
