@@ -34,7 +34,7 @@ const data = [
     title: "Smart Shopee",
     img: smartShopeeImg,
     desc: "An intelligent e-commerce platform with AI-powered product recommendations. Users can browse products, add items to cart, and checkout seamlessly. Integrated user behavior tracking to enhance recommendation accuracy and improve user experience across devices.",
-    tech: ["React.js","Node.js","Express","MongoDB","AI Recommendation"],
+    tech: ["React.js","HTML","CSS","JavaScript","Web Scrapping"],
     date: "June 2025",
     github: "https://github.com/vimalchilkoti01/PriceCompare"
   }
