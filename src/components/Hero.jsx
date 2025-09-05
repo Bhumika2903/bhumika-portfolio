@@ -27,7 +27,8 @@ export default function Hero() {
       </p>
 
       {/* Resume Button + Icons */}
-<div className="mt-6 sm:mt-8 flex flex-wrap justify-center gap-4">
+<div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center gap-4">
+  {/* Download Resume button */}
   <a
     href="https://drive.google.com/file/d/1KKtGJUvNsbMC7tOtQ-EpiNjVbUVmis73/view?usp=drivesdk"
     download
@@ -37,25 +38,29 @@ export default function Hero() {
     <FiDownload className="text-lg" /> Download Resume
   </a>
 
-  {[
-    { href: "https://github.com/Bhumika2903", icon: FaGithub },
-    { href: "https://linkedin.com/in/bhumika2903", icon: FaLinkedin },
-    { href: "https://leetcode.com/u/bhumika2903", icon: SiLeetcode },
-    { href: "mailto:imbhumikapandey1@gmail.com", icon: FaEnvelope },
-  ].map(({ href, icon: Icon }) => (
-    <a
-      key={href}
-      href={href}
-      target={href.startsWith("mailto:") ? "_self" : "_blank"}
-      rel={href.startsWith("mailto:") ? "" : "noreferrer"}
-      className="flex items-center justify-center w-10 h-10 rounded-full 
-                 ring-1 ring-black/10 dark:ring-white/20 
-                 transition-colors duration-300 hover:bg-[#FFF1E6] dark:hover:bg-gray-400/20"
-    >
-      <Icon className="text-black dark:text-white" size={14} />
-    </a>
-  ))}
+  {/* Social Icons */}
+  <div className="flex items-center justify-center gap-3">
+    {[
+      { href: "https://github.com/Bhumika2903", icon: FaGithub },
+      { href: "https://linkedin.com/in/bhumika2903", icon: FaLinkedin },
+      { href: "https://leetcode.com/u/bhumika2903", icon: SiLeetcode },
+      { href: "mailto:imbhumikapandey1@gmail.com", icon: FaEnvelope },
+    ].map(({ href, icon: Icon }) => (
+      <a
+        key={href}
+        href={href}
+        target={href.startsWith("mailto:") ? "_self" : "_blank"}
+        rel={href.startsWith("mailto:") ? "" : "noreferrer"}
+        className="flex items-center justify-center w-10 h-10 rounded-full 
+                   ring-1 ring-black/10 dark:ring-white/20 
+                   transition-colors duration-300 hover:bg-[#FFF1E6] dark:hover:bg-gray-400/20"
+      >
+        <Icon className="text-black dark:text-white" size={14} />
+      </a>
+    ))}
+  </div>
 </div>
+
 
 
       {/* Scroll to explore */}
