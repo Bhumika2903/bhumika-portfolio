@@ -4,15 +4,16 @@ import multiDiseaseImg from "../assets/multidisease.png";
 import ewasteImg from "../assets/e-waste.png";
 import driveImg from "../assets/drivealert.png";
 import smartShopeeImg from "../assets/shopee.png";
+import FoodImg from "../assets/food1.png";
 
 const data = [
   {
     title: "E-Waste Facility Locator",
     img: ewasteImg,
     desc: "Built a web app to locate e-waste recycling facilities using React.js, Flask, PostgreSQL with PostGIS, and geolocation APIs. Users can search nearby facilities, get directions, and view recycling options for different types of e-waste. Implemented responsive design for mobile and desktop use.",
-    tech: ["React.js","Flask","PostgreSQL","PostGIS","Geolocation API"],
+    tech: ["Django","Python","SQLite","Tesseract OCR","Leaflet.js"],
     date: "April 2025",
-    github: "https://github.com/Bhumika2903/E-Waste-Management_System"
+    github: "https://github.com/Bhumika2903/E-Waste"
   },
   {
     title: "Multi Disease Prediction Platform",
@@ -37,6 +38,14 @@ const data = [
     tech: ["React.js","HTML","CSS","JavaScript","Web Scrapping"],
     date: "June 2025",
     github: "https://github.com/vimalchilkoti01/PriceCompare"
+  },
+  {
+    title: "Food Health Rating System",
+    img: FoodImg,
+    desc: "Developed an AI-powered Food Health Rating System to analyze packaged food products and promote healthier dietary choices. Achieved 83%+ analysis accuracy through automated ingredient recognition, nutritional evaluation, and intelligent health-score generation. Delivered personalized dietary recommendations based on ingredient analysis and user health conditions, enabling informed food selection.",
+    tech: ["Python", "Flask", "OpenCV", "Tesseract OCR", "SQLite", "HTML", "CSS", "JavaScript"],
+    date: "May 2026",
+    github: "https://github.com/Bhumika2903/food_health_rating"
   }
 ];
 
