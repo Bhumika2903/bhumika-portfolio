@@ -42,12 +42,14 @@ export default function Contact() {
         throw new Error("EmailJS response not OK");
       }
     } catch (err) {
-      setStatus({
-        sending: false,
-        ok: false,
-        msg: "Failed to send. Check EmailJS keys and try again.",
-      });
-    }
+  console.error("EmailJS Error:", err);
+
+  setStatus({
+    sending: false,
+    ok: false,
+    msg: err?.text || err?.message || "Failed to send.",
+  });
+}
   };
 
   return (
