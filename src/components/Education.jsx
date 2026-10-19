@@ -49,14 +49,14 @@ export default function Education() {
           />
           <Item
             title="Intermediate"
-            org="Gangotri Garbyal Girls Inter College"
+            org="Gangotri Garbyal Girls School"
             meta="March 2022"
             where="Pithoragarh, Uttarakhand"
             desc="Completed Intermediate with 82.33% marks."
           />
           <Item
             title="Matriculation"
-            org="Gangotri Garbyal Girls Inter College"
+            org="Gangotri Garbyal Girls School"
             meta="March 2020"
             where="Pithoragarh, Uttarakhand"
             desc="Completed Matriculation with 78.93% marks."
