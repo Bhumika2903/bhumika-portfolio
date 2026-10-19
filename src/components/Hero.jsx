@@ -30,7 +30,7 @@ export default function Hero() {
 <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center gap-4">
   {/* Download Resume button */}
   <a
-    href="https://drive.google.com/file/d/1Uav8934Y8wFkF6KGuqmy6l8Q7X1lDVmp/view?usp=drivesdk"
+    href="https://drive.google.com/file/d/1PhIaiKhfclT__11ZnAms-PWphqlkRrZi/view?usp=drivesdk"
     download
     className="inline-flex items-center gap-2 bg-gradient-to-r from-[#E4967C] to-[#DE7F5F] text-white font-semibold px-4 sm:px-5 py-2.5 rounded-xl shadow-md hover:opacity-90 transition"
     title="Download Resume"
