@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col text-left w-full md:w-auto relative">
           <p className="font-semibold text-black dark:text-white">Bhumika Pandey</p>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-            Computer Science Student
+            Computer Science Graduate
           </p>
 
           {/* Horizontal line */}
